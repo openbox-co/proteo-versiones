@@ -24,6 +24,14 @@
       "vuelta_atras": true,
       "seguridad": false,
       "notas": "Arreglos del panel: X para volver al tablero del embudo, un solo desplazamiento en el tablero y ayudas de la X de los diálogos que no se cortan."
+    },
+    {
+      "version": "v1.1.0",
+      "fecha": "2026-11-10T15:05:18Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:a8c08ce38ea3a5b2b9a521d587af6ab5fa3839251f22a8a2db688a35923e7f2f",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Buscar actualizaciones: la página Sistema dice qué versiones nuevas hay y cuáles incluye tu licencia."
     }
   ]
 }
