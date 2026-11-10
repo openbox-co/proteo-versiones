@@ -2,6 +2,14 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.2.2",
+      "fecha": "2026-11-10T22:05:55Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:5166544848aa01097b1042a51aa6b60937668696af817ff5bdf4e44da2d92060",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "WhatsApp, Instagram y Messenger: una línea en blanco en la respuesta del asistente sale como otro mensaje (hasta 3), como escribe una persona por chat."
+    },
+    {
       "version": "v1.2.1",
       "fecha": "2026-11-10T18:20:11Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:b447564f2f8523c7043b3d1b7a04071afb830307d62a92ec39cad50da991c31f",
