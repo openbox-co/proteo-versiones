@@ -2,6 +2,14 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.2.1",
+      "fecha": "2026-11-10T18:20:11Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:b447564f2f8523c7043b3d1b7a04071afb830307d62a92ec39cad50da991c31f",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Mantenimiento: primera versión que se aplica con el botón Actualizar de la página Sistema."
+    },
+    {
       "version": "v1.2.0",
       "fecha": "2026-11-10T16:44:52Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:8955c23a9faa1f3f3cb468fb0011ddcdc2e2388adf99913a23ac30c37338008c",
