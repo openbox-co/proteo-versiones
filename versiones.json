@@ -2,6 +2,14 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.2.0",
+      "fecha": "2026-11-10T16:44:52Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:8955c23a9faa1f3f3cb468fb0011ddcdc2e2388adf99913a23ac30c37338008c",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Actualizar desde el panel en Railway: botón con confirmación, token del proyecto cifrado e historial. La versión nueva no migra si la licencia no la incluye."
+    },
+    {
       "version": "v1.0.0",
       "fecha": "2026-11-09T18:51:36Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:89268483194ef1697291531287b729db8fddbc3af13296c8b851521e9ab6c408",
