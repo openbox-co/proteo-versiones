@@ -2,6 +2,14 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.2.3",
+      "fecha": "2026-11-10T22:38:29Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:a18dac8624573497a127ad5dac4a898aa66bac6e6d75db3375e282a368bc8375",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Avisos al pasar y devolver una conversación sin decir «asistente», y el asistente ya sabe que vuelve a atender cuando una persona le devuelve la conversación."
+    },
+    {
       "version": "v1.2.2",
       "fecha": "2026-11-10T22:05:55Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:5166544848aa01097b1042a51aa6b60937668696af817ff5bdf4e44da2d92060",
