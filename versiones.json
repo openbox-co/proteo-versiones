@@ -1,0 +1,29 @@
+{
+  "canal": "estable",
+  "versiones": [
+    {
+      "version": "v1.0.0",
+      "fecha": "2026-11-09T18:51:36Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:89268483194ef1697291531287b729db8fddbc3af13296c8b851521e9ab6c408",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Primera versión numerada: canal de Meta (WhatsApp, Instagram y Messenger), embudo de ventas, conversaciones, chat con el agente, catálogo y formularios."
+    },
+    {
+      "version": "v1.0.1",
+      "fecha": "2026-11-10T02:56:53Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:748e5f484b65d7fbefbedbcdc08148ce4416613a34c8c02c92fe7d2fb82fba38",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Página Sistema: la versión instalada y lo que cubre la licencia."
+    },
+    {
+      "version": "v1.0.2",
+      "fecha": "2026-11-10T03:40:16Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:90e0ec7b82f26c5743d0dce76cf256b210d83bf85169cf856fada28905a1990f",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Arreglos del panel: X para volver al tablero del embudo, un solo desplazamiento en el tablero y ayudas de la X de los diálogos que no se cortan."
+    }
+  ]
+}
