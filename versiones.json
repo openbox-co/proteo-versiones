@@ -2,6 +2,14 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.8.0",
+      "fecha": "2026-11-11T16:48:44Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:f7f523b65f59facd7f7130d9ea3dcf1b2a0f655e745607f23fecce5ab8d0625d",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Varios tableros del embudo, cada uno con sus canales (cada número de WhatsApp, Instagram, Messenger o el chat de la web), de ventas o de seguimiento, con el resumen de Inicio por tablero. Antes de volver a una versión anterior, quita los tableros extra."
+    },
+    {
       "version": "v1.7.0",
       "fecha": "2026-11-11T15:58:36Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:929c8c6c96d13a2e0650a0023417aa8a56fd3c8a9e9ef9b8c8e883568bbdf4fd",
