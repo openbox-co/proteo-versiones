@@ -2,6 +2,14 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.3.0",
+      "fecha": "2026-11-10T23:49:15Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:10efb112a753ab18084cacebede2641160ef1dc5631d70e0ee00db669dab72ff",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Notas de voz: en WhatsApp, Instagram y Messenger el asistente las pasa a texto (Groq) y responde. Se activa con una clave en Integraciones."
+    },
+    {
       "version": "v1.2.3",
       "fecha": "2026-11-10T22:38:29Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:a18dac8624573497a127ad5dac4a898aa66bac6e6d75db3375e282a368bc8375",
