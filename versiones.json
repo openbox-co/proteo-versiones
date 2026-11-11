@@ -2,6 +2,14 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.4.0",
+      "fecha": "2026-11-11T02:41:19Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:9d8cd192cecf5f8afe231a872ac1402554dc36e9a46b42643a4315362e41939c",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Campañas: cada conversación y cada lead guardan de qué anuncio de Meta o campaña con UTM llegaron; el asistente sabe qué anuncio vio la persona y el webhook de salida lo incluye."
+    },
+    {
       "version": "v1.3.1",
       "fecha": "2026-11-11T00:54:25Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:73068cd9bbd5fc02a024d261e4658c4c51f62e85630d7d7996e64726c20888d0",
