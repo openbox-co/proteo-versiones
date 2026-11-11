@@ -2,6 +2,14 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.11.0",
+      "fecha": "2026-11-11T19:10:28Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:35890cf40527d09ff70f8ac394604772ceb93c0d3321bb8bd112b546f2a21bb6",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Calendario en Tareas y aprobación de ventas: con «Pago por confirmar» en un tablero, solo un supervisor da la venta por ganada y PROTEO deja ahí a quien dice que ya pagó."
+    },
+    {
       "version": "v1.10.0",
       "fecha": "2026-11-11T18:37:54Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:15cb32ff6f0c71e3727c7d478833df486f48cfc7dc2fb03b556685a84eaf079d",
