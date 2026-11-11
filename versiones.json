@@ -2,6 +2,14 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.10.0",
+      "fecha": "2026-11-11T18:37:54Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:15cb32ff6f0c71e3727c7d478833df486f48cfc7dc2fb03b556685a84eaf079d",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Con varios tableros, al entrar a Conversaciones se elige cuál ver (tarjetas por tablero) y «‹ Tableros» vuelve a elegir."
+    },
+    {
       "version": "v1.9.0",
       "fecha": "2026-11-11T17:56:22Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:60fbc7b36840d67b8a1b8c77d9faf67e9ab03699a043d3a7cdb78e9eff51842b",
