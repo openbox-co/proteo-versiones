@@ -2,6 +2,14 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.7.0",
+      "fecha": "2026-11-11T15:58:36Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:929c8c6c96d13a2e0650a0023417aa8a56fd3c8a9e9ef9b8c8e883568bbdf4fd",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Tareas del equipo: recordatorios y seguimientos pegados a un lead o a una conversación, con página Tareas y contador en el menú. Zona horaria del negocio en Ajustes → Negocio."
+    },
+    {
       "version": "v1.6.1",
       "fecha": "2026-11-11T13:25:22Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:3c0547291a1182638795080c4f613eb76a5222b46b5355bad59ec7b89a1d1fea",
