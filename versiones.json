@@ -2,6 +2,14 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.5.0",
+      "fecha": "2026-11-11T03:18:00Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:4784458c35cf3d623a80e7dfc68b2c29465b9026b27f06fa1f913013011b1de1",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Campañas: conecta la cuenta publicitaria de Meta en Canales y PROTEO copia cada hora el gasto por anuncio y los nombres de campañas y conjuntos."
+    },
+    {
       "version": "v1.4.0",
       "fecha": "2026-11-11T02:41:19Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:9d8cd192cecf5f8afe231a872ac1402554dc36e9a46b42643a4315362e41939c",
