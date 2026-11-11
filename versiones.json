@@ -2,6 +2,14 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.9.0",
+      "fecha": "2026-11-11T17:56:22Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:60fbc7b36840d67b8a1b8c77d9faf67e9ab03699a043d3a7cdb78e9eff51842b",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Activar un pack lo prueba antes con el modelo de IA: si la API no acepta sus datos (por ejemplo, demasiados), no se activa y el panel dice por qué."
+    },
+    {
       "version": "v1.8.0",
       "fecha": "2026-11-11T16:48:44Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:f7f523b65f59facd7f7130d9ea3dcf1b2a0f655e745607f23fecce5ab8d0625d",
