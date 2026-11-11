@@ -2,6 +2,14 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.6.1",
+      "fecha": "2026-11-11T13:25:22Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:3c0547291a1182638795080c4f613eb76a5222b46b5355bad59ec7b89a1d1fea",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "La tabla de Campañas cabe en pantallas estrechas, y el valor de una venta acepta coma o punto decimal."
+    },
+    {
       "version": "v1.6.0",
       "fecha": "2026-11-11T11:58:16Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:5fe32d8fb20bfbaefc1e4dea01311daec67ece96c78d5e2a10c3141e17a9d9fb",
