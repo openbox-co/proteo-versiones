@@ -2,6 +2,14 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.6.0",
+      "fecha": "2026-11-11T11:58:16Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:5fe32d8fb20bfbaefc1e4dea01311daec67ece96c78d5e2a10c3141e17a9d9fb",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Página Campañas: lo que trajo y costó cada campaña de Meta, con el retorno. Al cerrar una venta en el embudo se puede anotar su valor, y la conversación y el lead dicen de qué anuncio llegaron."
+    },
+    {
       "version": "v1.5.0",
       "fecha": "2026-11-11T03:18:00Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:4784458c35cf3d623a80e7dfc68b2c29465b9026b27f06fa1f913013011b1de1",
