@@ -93,7 +93,7 @@
       "id": "meta",
       "nombre": "WhatsApp, Instagram y Messenger",
       "descripcion": "El mismo asistente en los canales de Meta, con botones, listas y tarjetas.",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "requiere": [
         "conversaciones"
       ],
@@ -102,6 +102,13 @@
         "Plantilla para retomar en Conversaciones"
       ],
       "cambios": [
+        {
+          "version": "1.0.2",
+          "fecha": "2026-11-19",
+          "notas": [
+            "WhatsApp atiende a quien tiene nombre de usuario y llega sin teléfono (Meta manda solo su id para el negocio): se le contesta y, si después llega su teléfono, sigue en la misma conversación."
+          ]
+        },
         {
           "version": "1.0.1",
           "fecha": "2026-11-19",
@@ -316,7 +323,7 @@
       "id": "flujos",
       "nombre": "Flujos",
       "descripcion": "Árboles de opciones y preguntas sin IA, armados en un lienzo, que atienden solos o cuando PROTEO los abre.",
-      "version": "0.5.0",
+      "version": "0.5.1",
       "requiere": [
         "conversaciones"
       ],
@@ -324,6 +331,13 @@
         "Flujos"
       ],
       "cambios": [
+        {
+          "version": "0.5.1",
+          "fecha": "2026-11-19",
+          "notas": [
+            "El lienzo ya no parpadea al mover los nodos: la posición se guarda al soltar."
+          ]
+        },
         {
           "version": "0.5.0",
           "fecha": "2026-11-19",
