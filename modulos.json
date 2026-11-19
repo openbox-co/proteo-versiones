@@ -227,12 +227,19 @@
       "id": "tareas",
       "nombre": "Tareas",
       "descripcion": "Recordatorios y seguimientos del equipo, pegados a un lead o una conversación.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "requiere": [],
       "secciones": [
         "Tareas"
       ],
       "cambios": [
+        {
+          "version": "1.2.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Se elige a quién van las tareas que deja PROTEO cuando nadie atiende la conversación ni tiene la ficha (Tareas → «Tareas que deja PROTEO»); por ejemplo, los retiros en tienda."
+          ]
+        },
         {
           "version": "1.1.0",
           "fecha": "2026-11-19",
