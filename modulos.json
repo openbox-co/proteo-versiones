@@ -1,0 +1,372 @@
+{
+  "formato": "proteo-modulos/1",
+  "modulos": [
+    {
+      "id": "conversaciones",
+      "nombre": "Conversaciones",
+      "descripcion": "Bandeja para atender a las personas: notas internas, respuestas rápidas y avisos en vivo.",
+      "version": "1.0.1",
+      "requiere": [],
+      "secciones": [
+        "Conversaciones",
+        "Respuestas rápidas"
+      ],
+      "cambios": [
+        {
+          "version": "1.0.1",
+          "fecha": "2026-11-19",
+          "notas": [
+            "«Enviar un flujo» en el hilo: el cliente lo llena y la conversación vuelve a quien lo envió.",
+            "El hilo dice cuándo empezó o terminó un flujo y a quién pasó la conversación.",
+            "El hilo muestra las fotos que mandó el visitante por la web.",
+            "El flujo en vivo del panel lleva también las notificaciones de cada persona (solo a ella)."
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Bandeja de tres paneles con no leídos, notas internas y respuestas rápidas.",
+            "Avisos en vivo («escribiendo…», «Visto») y alcance por tableros.",
+            "Primera versión como módulo: se instala y se desactiva por negocio."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chat_web",
+      "nombre": "Chat web",
+      "descripcion": "El asistente en la web del negocio: widget, API de chat y probador.",
+      "version": "1.1.0",
+      "requiere": [
+        "conversaciones"
+      ],
+      "secciones": [
+        "Chat (widget y probador)"
+      ],
+      "cambios": [
+        {
+          "version": "1.1.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "El asistente puede abrir un flujo de preguntas guiadas en medio de la conversación.",
+            "Si el chat empieza con un flujo, el flujo responde antes que el agente.",
+            "La página Chat muestra el uso en 30 días: respuestas, tokens por respuesta y cuánto sale de la caché.",
+            "El visitante puede mandar fotos desde el widget: se reducen en su navegador, el asistente las ve y se guardan 30 días.",
+            "El asistente puede dejar al equipo una tarea de seguimiento («escríbanme el lunes»), si el negocio tiene el módulo de Tareas y su zona horaria."
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Widget en la web del negocio, API de chat y probador en el panel.",
+            "Animación y estética (vidrio o sólida) elegidas por negocio.",
+            "Primera versión como módulo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modo_guia",
+      "nombre": "Modo guía",
+      "descripcion": "El asistente lleva al visitante por la web: mapa del sitio, recorridos y personaje.",
+      "version": "1.0.0",
+      "requiere": [
+        "chat_web"
+      ],
+      "secciones": [
+        "Mapa del sitio, en Chat"
+      ],
+      "cambios": [
+        {
+          "version": "1.0.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Mapa del sitio, recorridos con el personaje y navegación en webs Astro.",
+            "Primera versión como módulo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meta",
+      "nombre": "WhatsApp, Instagram y Messenger",
+      "descripcion": "El mismo asistente en los canales de Meta, con botones, listas y tarjetas.",
+      "version": "1.0.1",
+      "requiere": [
+        "conversaciones"
+      ],
+      "secciones": [
+        "Canales",
+        "Plantilla para retomar en Conversaciones"
+      ],
+      "cambios": [
+        {
+          "version": "1.0.1",
+          "fecha": "2026-11-19",
+          "notas": [
+            "El asistente puede abrir un flujo en WhatsApp, Instagram y Messenger; sus preguntas salen con la respuesta.",
+            "Si el número empieza con un flujo, el flujo responde antes que el agente (los botones elegidos y las fotos cuentan como respuestas)."
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Canal de Meta con botones, listas, tarjetas con foto y carrusel.",
+            "Etiqueta de agente humano y plantilla para retomar después de 24 h.",
+            "Primera versión como módulo: con el módulo apagado, los mensajes se guardan pero no se responden."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "notas_voz",
+      "nombre": "Notas de voz",
+      "descripcion": "Pasa a texto las notas de voz que llegan por los canales de Meta.",
+      "version": "1.0.0",
+      "requiere": [
+        "meta"
+      ],
+      "secciones": [
+        "Notas de voz, en Integraciones"
+      ],
+      "cambios": [
+        {
+          "version": "1.0.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Transcripción con Whisper (Groq), una vez por nota.",
+            "Primera versión como módulo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "catalogo",
+      "nombre": "Catálogo",
+      "descripcion": "Productos desde un CSV o la base de la tienda, con búsqueda y precio verificado en vivo.",
+      "version": "1.0.0",
+      "requiere": [],
+      "secciones": [
+        "Catálogo",
+        "Enviar un producto, en Conversaciones"
+      ],
+      "cambios": [
+        {
+          "version": "1.0.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Productos por CSV o desde la base de la tienda, con verificación en vivo del precio.",
+            "Atributos extraídos con el modelo una vez por cambio de producto.",
+            "Primera versión como módulo: sin él, el asistente no busca productos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conocimiento",
+      "nombre": "Conocimiento",
+      "descripcion": "Políticas y preguntas frecuentes que el asistente consulta antes de dar una condición.",
+      "version": "1.0.0",
+      "requiere": [],
+      "secciones": [
+        "Conocimiento"
+      ],
+      "cambios": [
+        {
+          "version": "1.0.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Políticas y preguntas frecuentes que el asistente consulta antes de dar una condición.",
+            "Primera versión como módulo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "embudo",
+      "nombre": "Embudo y tableros",
+      "descripcion": "Etapas de venta, varios tableros, cierres y cifras.",
+      "version": "1.0.1",
+      "requiere": [
+        "conversaciones"
+      ],
+      "secciones": [
+        "Tableros",
+        "Embudo en Conversaciones e Inicio"
+      ],
+      "cambios": [
+        {
+          "version": "1.0.1",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Al ganar una venta de una conversación de anuncio, se encarga devolverla a Meta (si la cuenta lo tiene activo)."
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Etapas por negocio, varios tableros con sus canales y cierres con motivo.",
+            "Aprobación de ventas con «Pago por confirmar».",
+            "Primera versión como módulo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tareas",
+      "nombre": "Tareas",
+      "descripcion": "Recordatorios y seguimientos del equipo, pegados a un lead o una conversación.",
+      "version": "1.1.0",
+      "requiere": [],
+      "secciones": [
+        "Tareas"
+      ],
+      "cambios": [
+        {
+          "version": "1.1.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Notificaciones: a quien le asignan una tarea, cuando le vence y a quien la creó cuando se completa.",
+            "PROTEO deja tareas de seguimiento cuando el cliente pide que lo contacten después (necesita la zona horaria del negocio)."
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Recordatorios del equipo pegados a un lead o una conversación, con calendario.",
+            "Primera versión como módulo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formularios",
+      "nombre": "Formularios",
+      "descripcion": "Formularios para la web: constructor, iframe, API y webhook de entrada.",
+      "version": "1.0.0",
+      "requiere": [],
+      "secciones": [
+        "Formularios"
+      ],
+      "cambios": [
+        {
+          "version": "1.0.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Constructor, iframe, API con clave pública o firma y webhook de entrada con mapeo.",
+            "Primera versión como módulo: sin él, sus páginas y su API responden 404."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "campanas",
+      "nombre": "Campañas",
+      "descripcion": "De qué anuncio llegó cada persona, el gasto de Meta y el retorno.",
+      "version": "1.1.0",
+      "requiere": [],
+      "secciones": [
+        "Campañas",
+        "Cuenta publicitaria, en Canales"
+      ],
+      "cambios": [
+        {
+          "version": "1.1.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Devolver conversiones a Meta: el lead calificado y la venta de las conversaciones que llegaron por un anuncio, activable por cuenta."
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Atribución por anuncio, gasto copiado de Meta y retorno por campaña.",
+            "Primera versión como módulo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "webhook_salida",
+      "nombre": "Webhook de salida",
+      "descripcion": "Manda cada lead calificado, firmado, al sistema del negocio.",
+      "version": "1.0.0",
+      "requiere": [],
+      "secciones": [
+        "Webhook de salida, en Integraciones"
+      ],
+      "cambios": [
+        {
+          "version": "1.0.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Cada lead calificado (y cerrado) sale firmado, con reintentos.",
+            "Primera versión como módulo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flujos",
+      "nombre": "Flujos",
+      "descripcion": "Árboles de opciones y preguntas sin IA, armados en un lienzo, que atienden solos o cuando PROTEO los abre.",
+      "version": "0.5.0",
+      "requiere": [
+        "conversaciones"
+      ],
+      "secciones": [
+        "Flujos"
+      ],
+      "cambios": [
+        {
+          "version": "0.5.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Pestaña «Uso» en el editor: cuántas conversaciones empezaron el flujo, cómo terminaron, cuántas pasaron por cada paso y en cuál se quedaron sin responder.",
+            "Plantillas para empezar: Soporte, Citas y Devolución."
+          ]
+        },
+        {
+          "version": "0.4.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "PROTEO abre los flujos marcados para él cuando la conversación encaja con su descripción (iniciar_flujo) y retoma con lo respondido.",
+            "Una persona del equipo envía un flujo desde la conversación; al terminar, la conversación vuelve a ella."
+          ]
+        },
+        {
+          "version": "0.3.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Página Flujos en el panel: lista, nuevo flujo y con qué empieza cada canal.",
+            "Editor visual: lienzo con nodos y flechas, panel del nodo con «Va a…» para conectar sin arrastrar, errores sobre cada nodo, guardado automático, simulador, publicar y volver a una versión anterior."
+          ]
+        },
+        {
+          "version": "0.2.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Los flujos atienden conversaciones en el chat de la web, WhatsApp, Instagram y Messenger, sin llamar al modelo.",
+            "Cada canal puede empezar con un flujo publicado; caduca a las 24 h sin respuesta.",
+            "Al terminar pasan a PROTEO (con lo respondido), a una persona (con el motivo) o a otro flujo; lo que coincide con el pack va a la ficha."
+          ]
+        },
+        {
+          "version": "0.1.0",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Motor de flujos sin IA: opciones, preguntas con validación (texto, número, correo, teléfono, fecha, foto), condiciones, etiquetas y salidas a PROTEO, a una persona o a otro flujo.",
+            "Borradores que se validan con los límites de WhatsApp y versiones publicadas que no cambian.",
+            "Por ahora se manejan por la API; las conversaciones y el editor visual llegan en las fases siguientes."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -2,6 +2,111 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.12.0",
+      "fecha": "2026-11-19T15:15:10Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:7f2a3a15e4b87415f03716946bf88eddea45ea37714cf3d7ce9c5a4755c1dcf1",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Flujos sin IA: menús de opciones y preguntas que se arman en un lienzo, pueden ir primero en un canal y abrirlos PROTEO o una persona. Módulos por negocio con tienda en Ajustes → Módulos; roles propietario, supervisor y personalizados, alcance por tableros e invitaciones por enlace; notificaciones, tareas que deja PROTEO y reparto parejo; fotos del visitante en el chat web. El técnico tendrá que configurar el segundo factor la primera vez que entre.",
+      "modulos": {
+        "campanas": {
+          "version": "1.1.0",
+          "notas": [
+            "Devolver conversiones a Meta: el lead calificado y la venta de las conversaciones que llegaron por un anuncio, activable por cuenta."
+          ]
+        },
+        "catalogo": {
+          "version": "1.0.0",
+          "notas": [
+            "Productos por CSV o desde la base de la tienda, con verificación en vivo del precio.",
+            "Atributos extraídos con el modelo una vez por cambio de producto.",
+            "Primera versión como módulo: sin él, el asistente no busca productos."
+          ]
+        },
+        "chat_web": {
+          "version": "1.1.0",
+          "notas": [
+            "El asistente puede abrir un flujo de preguntas guiadas en medio de la conversación.",
+            "Si el chat empieza con un flujo, el flujo responde antes que el agente.",
+            "La página Chat muestra el uso en 30 días: respuestas, tokens por respuesta y cuánto sale de la caché.",
+            "El visitante puede mandar fotos desde el widget: se reducen en su navegador, el asistente las ve y se guardan 30 días.",
+            "El asistente puede dejar al equipo una tarea de seguimiento («escríbanme el lunes»), si el negocio tiene el módulo de Tareas y su zona horaria."
+          ]
+        },
+        "conocimiento": {
+          "version": "1.0.0",
+          "notas": [
+            "Políticas y preguntas frecuentes que el asistente consulta antes de dar una condición.",
+            "Primera versión como módulo."
+          ]
+        },
+        "conversaciones": {
+          "version": "1.0.1",
+          "notas": [
+            "«Enviar un flujo» en el hilo: el cliente lo llena y la conversación vuelve a quien lo envió.",
+            "El hilo dice cuándo empezó o terminó un flujo y a quién pasó la conversación.",
+            "El hilo muestra las fotos que mandó el visitante por la web.",
+            "El flujo en vivo del panel lleva también las notificaciones de cada persona (solo a ella)."
+          ]
+        },
+        "embudo": {
+          "version": "1.0.1",
+          "notas": [
+            "Al ganar una venta de una conversación de anuncio, se encarga devolverla a Meta (si la cuenta lo tiene activo)."
+          ]
+        },
+        "flujos": {
+          "version": "0.5.0",
+          "notas": [
+            "Pestaña «Uso» en el editor: cuántas conversaciones empezaron el flujo, cómo terminaron, cuántas pasaron por cada paso y en cuál se quedaron sin responder.",
+            "Plantillas para empezar: Soporte, Citas y Devolución."
+          ]
+        },
+        "formularios": {
+          "version": "1.0.0",
+          "notas": [
+            "Constructor, iframe, API con clave pública o firma y webhook de entrada con mapeo.",
+            "Primera versión como módulo: sin él, sus páginas y su API responden 404."
+          ]
+        },
+        "meta": {
+          "version": "1.0.1",
+          "notas": [
+            "El asistente puede abrir un flujo en WhatsApp, Instagram y Messenger; sus preguntas salen con la respuesta.",
+            "Si el número empieza con un flujo, el flujo responde antes que el agente (los botones elegidos y las fotos cuentan como respuestas)."
+          ]
+        },
+        "modo_guia": {
+          "version": "1.0.0",
+          "notas": [
+            "Mapa del sitio, recorridos con el personaje y navegación en webs Astro.",
+            "Primera versión como módulo."
+          ]
+        },
+        "notas_voz": {
+          "version": "1.0.0",
+          "notas": [
+            "Transcripción con Whisper (Groq), una vez por nota.",
+            "Primera versión como módulo."
+          ]
+        },
+        "tareas": {
+          "version": "1.1.0",
+          "notas": [
+            "Notificaciones: a quien le asignan una tarea, cuando le vence y a quien la creó cuando se completa.",
+            "PROTEO deja tareas de seguimiento cuando el cliente pide que lo contacten después (necesita la zona horaria del negocio)."
+          ]
+        },
+        "webhook_salida": {
+          "version": "1.0.0",
+          "notas": [
+            "Cada lead calificado (y cerrado) sale firmado, con reintentos.",
+            "Primera versión como módulo."
+          ]
+        }
+      }
+    },
+    {
       "version": "v1.11.0",
       "fecha": "2026-11-11T19:10:28Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:35890cf40527d09ff70f8ac394604772ceb93c0d3321bb8bd112b546f2a21bb6",
