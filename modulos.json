@@ -93,7 +93,7 @@
       "id": "meta",
       "nombre": "WhatsApp, Instagram y Messenger",
       "descripcion": "El mismo asistente en los canales de Meta, con botones, listas y tarjetas.",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "requiere": [
         "conversaciones"
       ],
@@ -102,6 +102,13 @@
         "Plantilla para retomar en Conversaciones"
       ],
       "cambios": [
+        {
+          "version": "1.0.3",
+          "fecha": "2026-11-19",
+          "notas": [
+            "Si Meta rechaza un mensaje por un fallo pasajero («Service temporarily unavailable»), se repite hasta dos veces; una tarjeta que sigue fallando sale sin la foto."
+          ]
+        },
         {
           "version": "1.0.2",
           "fecha": "2026-11-19",
