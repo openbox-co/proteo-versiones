@@ -2,6 +2,103 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.13.4",
+      "fecha": "2026-11-20T19:03:07Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:b4095fd6eb908850dc9804613ab5f62cd537553cf5e2b427afa5a62a3fc3db80",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Se puede tomar una conversación mientras la atiende PROTEO (deja de contestar hasta que se la devuelvan); los textos de los botones de la cabecera ya no se cortan; «Enviar un flujo…» no sale si no hay flujos publicados.",
+      "modulos": {
+        "campanas": {
+          "version": "1.1.0",
+          "notas": [
+            "Devolver conversiones a Meta: el lead calificado y la venta de las conversaciones que llegaron por un anuncio, activable por cuenta."
+          ]
+        },
+        "catalogo": {
+          "version": "1.0.0",
+          "notas": [
+            "Productos por CSV o desde la base de la tienda, con verificación en vivo del precio.",
+            "Atributos extraídos con el modelo una vez por cambio de producto.",
+            "Primera versión como módulo: sin él, el asistente no busca productos."
+          ]
+        },
+        "chat_web": {
+          "version": "1.1.2",
+          "notas": [
+            "`conversaciones.tomar` acepta conversaciones que atiende PROTEO."
+          ]
+        },
+        "conocimiento": {
+          "version": "1.0.0",
+          "notas": [
+            "Políticas y preguntas frecuentes que el asistente consulta antes de dar una condición.",
+            "Primera versión como módulo."
+          ]
+        },
+        "conversaciones": {
+          "version": "1.2.0",
+          "notas": [
+            "«Tomarla» también mientras atiende PROTEO: entras a la conversación y el agente deja de contestar hasta que se la devuelvas.",
+            "Los textos de los botones de la cabecera de la conversación salen debajo: arriba se cortaban.",
+            "«Enviar un flujo…» no sale si el negocio no tiene flujos publicados."
+          ]
+        },
+        "embudo": {
+          "version": "1.1.1",
+          "notas": [
+            "El texto de «Mover a…» en la cabecera de la conversación sale debajo del botón: arriba se cortaba."
+          ]
+        },
+        "flujos": {
+          "version": "0.5.1",
+          "notas": [
+            "El lienzo ya no parpadea al mover los nodos: la posición se guarda al soltar."
+          ]
+        },
+        "formularios": {
+          "version": "1.0.0",
+          "notas": [
+            "Constructor, iframe, API con clave pública o firma y webhook de entrada con mapeo.",
+            "Primera versión como módulo: sin él, sus páginas y su API responden 404."
+          ]
+        },
+        "meta": {
+          "version": "1.0.4",
+          "notas": [
+            "No se reabre una conversación de WhatsApp, Instagram o Messenger si el cliente ya tiene otra abierta."
+          ]
+        },
+        "modo_guia": {
+          "version": "1.0.0",
+          "notas": [
+            "Mapa del sitio, recorridos con el personaje y navegación en webs Astro.",
+            "Primera versión como módulo."
+          ]
+        },
+        "notas_voz": {
+          "version": "1.0.0",
+          "notas": [
+            "Transcripción con Whisper (Groq), una vez por nota.",
+            "Primera versión como módulo."
+          ]
+        },
+        "tareas": {
+          "version": "1.3.0",
+          "notas": [
+            "PROTEO deja un seguimiento también cuando el cliente deja algo pendiente («lo voy a pensar», «se lo paso a mi amigo»), para pasado mañana si no dio fecha."
+          ]
+        },
+        "webhook_salida": {
+          "version": "1.0.0",
+          "notas": [
+            "Cada lead calificado (y cerrado) sale firmado, con reintentos.",
+            "Primera versión como módulo."
+          ]
+        }
+      }
+    },
+    {
       "version": "v1.13.3",
       "fecha": "2026-11-20T18:21:55Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:95f387af98b128d879bfb21820b3622f21331fd7f8c075b2443ab63c7b155178",
