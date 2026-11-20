@@ -2,6 +2,108 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.13.2",
+      "fecha": "2026-11-20T02:36:14Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:cde70f8761496a8f334556410cbc5bff2637b06f4c17afbc9cbbf664f1fda1be",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Si se cambian las instrucciones del asistente (otro pack, su nombre o los módulos) a mitad de una conversación, sigue respondiendo (antes la API la rechazaba y el cliente se quedaba sin respuesta).",
+      "modulos": {
+        "campanas": {
+          "version": "1.1.0",
+          "notas": [
+            "Devolver conversiones a Meta: el lead calificado y la venta de las conversaciones que llegaron por un anuncio, activable por cuenta."
+          ]
+        },
+        "catalogo": {
+          "version": "1.0.0",
+          "notas": [
+            "Productos por CSV o desde la base de la tienda, con verificación en vivo del precio.",
+            "Atributos extraídos con el modelo una vez por cambio de producto.",
+            "Primera versión como módulo: sin él, el asistente no busca productos."
+          ]
+        },
+        "chat_web": {
+          "version": "1.1.0",
+          "notas": [
+            "El asistente puede abrir un flujo de preguntas guiadas en medio de la conversación.",
+            "Si el chat empieza con un flujo, el flujo responde antes que el agente.",
+            "La página Chat muestra el uso en 30 días: respuestas, tokens por respuesta y cuánto sale de la caché.",
+            "El visitante puede mandar fotos desde el widget: se reducen en su navegador, el asistente las ve y se guardan 30 días.",
+            "El asistente puede dejar al equipo una tarea de seguimiento («escríbanme el lunes»), si el negocio tiene el módulo de Tareas y su zona horaria."
+          ]
+        },
+        "conocimiento": {
+          "version": "1.0.0",
+          "notas": [
+            "Políticas y preguntas frecuentes que el asistente consulta antes de dar una condición.",
+            "Primera versión como módulo."
+          ]
+        },
+        "conversaciones": {
+          "version": "1.0.1",
+          "notas": [
+            "«Enviar un flujo» en el hilo: el cliente lo llena y la conversación vuelve a quien lo envió.",
+            "El hilo dice cuándo empezó o terminó un flujo y a quién pasó la conversación.",
+            "El hilo muestra las fotos que mandó el visitante por la web.",
+            "El flujo en vivo del panel lleva también las notificaciones de cada persona (solo a ella)."
+          ]
+        },
+        "embudo": {
+          "version": "1.0.1",
+          "notas": [
+            "Al ganar una venta de una conversación de anuncio, se encarga devolverla a Meta (si la cuenta lo tiene activo)."
+          ]
+        },
+        "flujos": {
+          "version": "0.5.1",
+          "notas": [
+            "El lienzo ya no parpadea al mover los nodos: la posición se guarda al soltar."
+          ]
+        },
+        "formularios": {
+          "version": "1.0.0",
+          "notas": [
+            "Constructor, iframe, API con clave pública o firma y webhook de entrada con mapeo.",
+            "Primera versión como módulo: sin él, sus páginas y su API responden 404."
+          ]
+        },
+        "meta": {
+          "version": "1.0.3",
+          "notas": [
+            "Si Meta rechaza un mensaje por un fallo pasajero («Service temporarily unavailable»), se repite hasta dos veces; una tarjeta que sigue fallando sale sin la foto."
+          ]
+        },
+        "modo_guia": {
+          "version": "1.0.0",
+          "notas": [
+            "Mapa del sitio, recorridos con el personaje y navegación en webs Astro.",
+            "Primera versión como módulo."
+          ]
+        },
+        "notas_voz": {
+          "version": "1.0.0",
+          "notas": [
+            "Transcripción con Whisper (Groq), una vez por nota.",
+            "Primera versión como módulo."
+          ]
+        },
+        "tareas": {
+          "version": "1.2.0",
+          "notas": [
+            "Se elige a quién van las tareas que deja PROTEO cuando nadie atiende la conversación ni tiene la ficha (Tareas → «Tareas que deja PROTEO»); por ejemplo, los retiros en tienda."
+          ]
+        },
+        "webhook_salida": {
+          "version": "1.0.0",
+          "notas": [
+            "Cada lead calificado (y cerrado) sale firmado, con reintentos.",
+            "Primera versión como módulo."
+          ]
+        }
+      }
+    },
+    {
       "version": "v1.13.1",
       "fecha": "2026-11-19T23:51:24Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:ab5f099ec84002c77efac43702c320b8e7fea91a602ae26bd3fa07d42bf06bf4",
