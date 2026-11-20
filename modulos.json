@@ -5,13 +5,23 @@
       "id": "conversaciones",
       "nombre": "Conversaciones",
       "descripcion": "Bandeja para atender a las personas: notas internas, respuestas rápidas y avisos en vivo.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "requiere": [],
       "secciones": [
         "Conversaciones",
-        "Respuestas rápidas"
+        "Respuestas rápidas",
+        "Etiquetas"
       ],
       "cambios": [
+        {
+          "version": "1.1.0",
+          "fecha": "2026-11-20",
+          "notas": [
+            "«Reabrir» en una conversación cerrada: vuelve a abrirse y queda en manos de quien la reabre.",
+            "Las conversaciones del chat de la web llevan la etiqueta «Web».",
+            "Página Etiquetas: color para cada canal y cada etiqueta de los leads, que se ve en la bandeja y en la ficha."
+          ]
+        },
         {
           "version": "1.0.1",
           "fecha": "2026-11-19",
@@ -37,7 +47,7 @@
       "id": "chat_web",
       "nombre": "Chat web",
       "descripcion": "El asistente en la web del negocio: widget, API de chat y probador.",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "requiere": [
         "conversaciones"
       ],
@@ -45,6 +55,13 @@
         "Chat (widget y probador)"
       ],
       "cambios": [
+        {
+          "version": "1.1.1",
+          "fecha": "2026-11-20",
+          "notas": [
+            "Operación `conversaciones.reabrir` (la usa la bandeja de Conversaciones)."
+          ]
+        },
         {
           "version": "1.1.0",
           "fecha": "2026-11-19",
@@ -93,7 +110,7 @@
       "id": "meta",
       "nombre": "WhatsApp, Instagram y Messenger",
       "descripcion": "El mismo asistente en los canales de Meta, con botones, listas y tarjetas.",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "requiere": [
         "conversaciones"
       ],
@@ -102,6 +119,13 @@
         "Plantilla para retomar en Conversaciones"
       ],
       "cambios": [
+        {
+          "version": "1.0.4",
+          "fecha": "2026-11-20",
+          "notas": [
+            "No se reabre una conversación de WhatsApp, Instagram o Messenger si el cliente ya tiene otra abierta."
+          ]
+        },
         {
           "version": "1.0.3",
           "fecha": "2026-11-19",
@@ -203,7 +227,7 @@
       "id": "embudo",
       "nombre": "Embudo y tableros",
       "descripcion": "Etapas de venta, varios tableros, cierres y cifras.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "requiere": [
         "conversaciones"
       ],
@@ -212,6 +236,13 @@
         "Embudo en Conversaciones e Inicio"
       ],
       "cambios": [
+        {
+          "version": "1.1.0",
+          "fecha": "2026-11-20",
+          "notas": [
+            "Una conversación ganada o perdida que se reabre vuelve a la entrada de su tablero, sin motivo ni valor de venta."
+          ]
+        },
         {
           "version": "1.0.1",
           "fecha": "2026-11-19",
@@ -234,12 +265,19 @@
       "id": "tareas",
       "nombre": "Tareas",
       "descripcion": "Recordatorios y seguimientos del equipo, pegados a un lead o una conversación.",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "requiere": [],
       "secciones": [
         "Tareas"
       ],
       "cambios": [
+        {
+          "version": "1.3.0",
+          "fecha": "2026-11-20",
+          "notas": [
+            "PROTEO deja un seguimiento también cuando el cliente deja algo pendiente («lo voy a pensar», «se lo paso a mi amigo»), para pasado mañana si no dio fecha."
+          ]
+        },
         {
           "version": "1.2.0",
           "fecha": "2026-11-19",
