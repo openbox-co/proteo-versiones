@@ -2,6 +2,99 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.13.5",
+      "fecha": "2026-11-21T22:54:42Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:be2644f1a679494fba9efaee10d2ac38666ac2a79e2e4533983e2e3eb31f48e1",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Las notas de voz se pueden escuchar desde Conversaciones y se transcriben también cuando atiende una persona; agregar y conectar (cuentas, claves, respuestas, conocimiento) se hace en diálogos.",
+      "modulos": {
+        "campanas": {
+          "version": "1.1.1",
+          "notas": [
+            "Las conversiones de cada cuenta se configuran en un diálogo; la página muestra si están activas."
+          ]
+        },
+        "catalogo": {
+          "version": "1.0.1",
+          "notas": [
+            "La base de la tienda se conecta o cambia en un diálogo; la página solo muestra si está conectada."
+          ]
+        },
+        "chat_web": {
+          "version": "1.1.3",
+          "notas": [
+            "Los mensajes dicen si traen una nota de voz (`audio`), para escucharla desde el panel."
+          ]
+        },
+        "conocimiento": {
+          "version": "1.0.1",
+          "notas": [
+            "«Nueva entrada» y editar una entrada se abren en un diálogo; la página solo lista."
+          ]
+        },
+        "conversaciones": {
+          "version": "1.2.1",
+          "notas": [
+            "«Escuchar» en las notas de voz del cliente.",
+            "«Nueva respuesta» y editar una respuesta rápida se abren en un diálogo; la página solo lista."
+          ]
+        },
+        "embudo": {
+          "version": "1.1.2",
+          "notas": [
+            "«Agregar una etapa» abre un diálogo en vez de dejar el formulario abierto."
+          ]
+        },
+        "flujos": {
+          "version": "0.5.1",
+          "notas": [
+            "El lienzo ya no parpadea al mover los nodos: la posición se guarda al soltar."
+          ]
+        },
+        "formularios": {
+          "version": "1.0.0",
+          "notas": [
+            "Constructor, iframe, API con clave pública o firma y webhook de entrada con mapeo.",
+            "Primera versión como módulo: sin él, sus páginas y su API responden 404."
+          ]
+        },
+        "meta": {
+          "version": "1.0.5",
+          "notas": [
+            "Las notas de voz se pueden escuchar desde el panel (`conversaciones.nota_voz`): se piden a Meta en el momento, sin guardarlas.",
+            "Canales lista las cuentas conectadas y la cuenta publicitaria; conectar o cambiar se hace en un diálogo, sin campos vacíos en la página."
+          ]
+        },
+        "modo_guia": {
+          "version": "1.0.0",
+          "notas": [
+            "Mapa del sitio, recorridos con el personaje y navegación en webs Astro.",
+            "Primera versión como módulo."
+          ]
+        },
+        "notas_voz": {
+          "version": "1.1.0",
+          "notas": [
+            "Las notas de voz que llegan mientras atiende una persona también se pasan a texto, para leerlas en el panel."
+          ]
+        },
+        "tareas": {
+          "version": "1.3.0",
+          "notas": [
+            "PROTEO deja un seguimiento también cuando el cliente deja algo pendiente («lo voy a pensar», «se lo paso a mi amigo»), para pasado mañana si no dio fecha."
+          ]
+        },
+        "webhook_salida": {
+          "version": "1.0.0",
+          "notas": [
+            "Cada lead calificado (y cerrado) sale firmado, con reintentos.",
+            "Primera versión como módulo."
+          ]
+        }
+      }
+    },
+    {
       "version": "v1.13.4",
       "fecha": "2026-11-20T19:03:07Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:b4095fd6eb908850dc9804613ab5f62cd537553cf5e2b427afa5a62a3fc3db80",
