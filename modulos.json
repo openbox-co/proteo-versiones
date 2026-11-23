@@ -5,7 +5,7 @@
       "id": "conversaciones",
       "nombre": "Conversaciones",
       "descripcion": "Bandeja para atender a las personas: notas internas, respuestas rápidas y avisos en vivo.",
-      "version": "1.3.0",
+      "version": "1.3.1",
       "requiere": [],
       "secciones": [
         "Conversaciones",
@@ -13,6 +13,13 @@
         "Etiquetas"
       ],
       "cambios": [
+        {
+          "version": "1.3.1",
+          "fecha": "2026-11-22",
+          "notas": [
+            "El panel del contacto muestra sus citas y deja agendar una desde la conversación."
+          ]
+        },
         {
           "version": "1.3.0",
           "fecha": "2026-11-21",
@@ -71,7 +78,7 @@
       "id": "chat_web",
       "nombre": "Chat web",
       "descripcion": "El asistente en la web del negocio: widget, API de chat y probador.",
-      "version": "1.1.4",
+      "version": "1.2.0",
       "requiere": [
         "conversaciones"
       ],
@@ -79,6 +86,13 @@
         "Chat (widget y probador)"
       ],
       "cambios": [
+        {
+          "version": "1.2.0",
+          "fecha": "2026-11-22",
+          "notas": [
+            "El asistente agenda citas con la agenda del equipo: ver_disponibilidad, agendar_cita, mis_citas, cambiar_cita y cancelar_cita (solo con el módulo Agenda y «PROTEO puede agendar» encendido)."
+          ]
+        },
         {
           "version": "1.1.4",
           "fecha": "2026-11-21",
@@ -532,6 +546,43 @@
             "Motor de flujos sin IA: opciones, preguntas con validación (texto, número, correo, teléfono, fecha, foto), condiciones, etiquetas y salidas a PROTEO, a una persona o a otro flujo.",
             "Borradores que se validan con los límites de WhatsApp y versiones publicadas que no cambian.",
             "Por ahora se manejan por la API; las conversaciones y el editor visual llegan en las fases siguientes."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agenda",
+      "nombre": "Agenda",
+      "descripcion": "Citas y llamadas con los clientes: horario de atención, días especiales, tipos de cita y Google Calendar u Outlook con Meet o Teams.",
+      "version": "0.3.0",
+      "requiere": [],
+      "secciones": [
+        "Agenda",
+        "Agenda, en Ajustes"
+      ],
+      "cambios": [
+        {
+          "version": "0.3.0",
+          "fecha": "2026-11-22",
+          "notas": [
+            "Google Calendar y Outlook (A3–A5): cada negocio pega las credenciales de su app de Google o de Microsoft en Ajustes → Agenda y cada persona conecta su calendario desde la página Agenda.",
+            "Las citas crean su evento con invitación al cliente; las videollamadas sin enlace fijo crean su Meet o su Teams. Lo ocupado en el calendario conectado no se ofrece como hueco.",
+            "Si alguien mueve o borra el evento en Google u Outlook, la cita se mueve o se cancela en PROTEO (cada 10 minutos) y avisa a quien la atiende."
+          ]
+        },
+        {
+          "version": "0.2.0",
+          "fecha": "2026-11-22",
+          "notas": [
+            "PROTEO agenda (A2): «PROTEO puede agendar», qué modalidades ofrece, confirmación automática o por confirmar, antelación y días adelante; casilla «PROTEO la puede ofrecer» en cada tipo de cita. Citas de cada conversación y «Agendar» desde ella."
+          ]
+        },
+        {
+          "version": "0.1.0",
+          "fecha": "2026-11-22",
+          "notas": [
+            "Primera versión (fase A1 de docs/diseno/plan-calendario.md): tipos de cita, horario de atención del negocio y de cada persona, días especiales y citas del equipo que no se pisan.",
+            "Huecos libres calculados por el servidor; videollamada con un enlace fijo por tipo de cita."
           ]
         }
       ]

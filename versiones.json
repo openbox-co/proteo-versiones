@@ -2,6 +2,105 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.14.0",
+      "fecha": "2026-11-23T00:02:39Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:11db4486db838cc383345bb0873634e60a2468433133b4085006caf075359b4e",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Agenda: tipos de cita, horario de atención y días especiales; PROTEO agenda citas en el chat y en WhatsApp; cada persona conecta su Google Calendar u Outlook y las videollamadas crean su Meet o su Teams.",
+      "modulos": {
+        "agenda": {
+          "version": "0.3.0",
+          "notas": [
+            "Google Calendar y Outlook (A3–A5): cada negocio pega las credenciales de su app de Google o de Microsoft en Ajustes → Agenda y cada persona conecta su calendario desde la página Agenda.",
+            "Las citas crean su evento con invitación al cliente; las videollamadas sin enlace fijo crean su Meet o su Teams. Lo ocupado en el calendario conectado no se ofrece como hueco.",
+            "Si alguien mueve o borra el evento en Google u Outlook, la cita se mueve o se cancela en PROTEO (cada 10 minutos) y avisa a quien la atiende."
+          ]
+        },
+        "campanas": {
+          "version": "1.1.1",
+          "notas": [
+            "Las conversiones de cada cuenta se configuran en un diálogo; la página muestra si están activas."
+          ]
+        },
+        "catalogo": {
+          "version": "1.0.1",
+          "notas": [
+            "La base de la tienda se conecta o cambia en un diálogo; la página solo muestra si está conectada."
+          ]
+        },
+        "chat_web": {
+          "version": "1.2.0",
+          "notas": [
+            "El asistente agenda citas con la agenda del equipo: ver_disponibilidad, agendar_cita, mis_citas, cambiar_cita y cancelar_cita (solo con el módulo Agenda y «PROTEO puede agendar» encendido)."
+          ]
+        },
+        "conocimiento": {
+          "version": "1.0.1",
+          "notas": [
+            "«Nueva entrada» y editar una entrada se abren en un diálogo; la página solo lista."
+          ]
+        },
+        "conversaciones": {
+          "version": "1.3.1",
+          "notas": [
+            "El panel del contacto muestra sus citas y deja agendar una desde la conversación."
+          ]
+        },
+        "embudo": {
+          "version": "1.1.2",
+          "notas": [
+            "«Agregar una etapa» abre un diálogo en vez de dejar el formulario abierto."
+          ]
+        },
+        "flujos": {
+          "version": "0.5.1",
+          "notas": [
+            "El lienzo ya no parpadea al mover los nodos: la posición se guarda al soltar."
+          ]
+        },
+        "formularios": {
+          "version": "1.0.0",
+          "notas": [
+            "Constructor, iframe, API con clave pública o firma y webhook de entrada con mapeo.",
+            "Primera versión como módulo: sin él, sus páginas y su API responden 404."
+          ]
+        },
+        "meta": {
+          "version": "1.1.0",
+          "notas": [
+            "Bloquear a un contacto de WhatsApp lo bloquea también en Meta (`block_users`, hasta 24 h después de su último mensaje); sus mensajes no se guardan."
+          ]
+        },
+        "modo_guia": {
+          "version": "1.0.0",
+          "notas": [
+            "Mapa del sitio, recorridos con el personaje y navegación en webs Astro.",
+            "Primera versión como módulo."
+          ]
+        },
+        "notas_voz": {
+          "version": "1.1.0",
+          "notas": [
+            "Las notas de voz que llegan mientras atiende una persona también se pasan a texto, para leerlas en el panel."
+          ]
+        },
+        "tareas": {
+          "version": "1.3.0",
+          "notas": [
+            "PROTEO deja un seguimiento también cuando el cliente deja algo pendiente («lo voy a pensar», «se lo paso a mi amigo»), para pasado mañana si no dio fecha."
+          ]
+        },
+        "webhook_salida": {
+          "version": "1.0.0",
+          "notas": [
+            "Cada lead calificado (y cerrado) sale firmado, con reintentos.",
+            "Primera versión como módulo."
+          ]
+        }
+      }
+    },
+    {
       "version": "v1.13.6",
       "fecha": "2026-11-22T00:12:13Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:5d134e913214e6f8de8efc9e0b3b5561ddf6138f5b2813d13ce0d751677c9fe8",
