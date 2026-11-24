@@ -5,7 +5,7 @@
       "id": "conversaciones",
       "nombre": "Conversaciones",
       "descripcion": "Bandeja para atender a las personas: notas internas, respuestas rápidas y avisos en vivo.",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "requiere": [],
       "secciones": [
         "Conversaciones",
@@ -13,6 +13,13 @@
         "Etiquetas"
       ],
       "cambios": [
+        {
+          "version": "1.4.1",
+          "fecha": "2026-11-24",
+          "notas": [
+            "Al desplazarte por las conversaciones ya no se mueve la página entera, y el panel del contacto no saca barra horizontal."
+          ]
+        },
         {
           "version": "1.4.0",
           "fecha": "2026-11-23",
@@ -420,12 +427,19 @@
       "id": "tareas",
       "nombre": "Tareas",
       "descripcion": "Recordatorios y seguimientos del equipo, pegados a un lead o una conversación.",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "requiere": [],
       "secciones": [
         "Tareas"
       ],
       "cambios": [
+        {
+          "version": "1.4.1",
+          "fecha": "2026-11-24",
+          "notas": [
+            "En la ficha del contacto, el texto del botón «+» ya no se corta."
+          ]
+        },
         {
           "version": "1.4.0",
           "fecha": "2026-11-23",
@@ -609,13 +623,20 @@
       "id": "agenda",
       "nombre": "Agenda",
       "descripcion": "Citas y llamadas con los clientes: horario de atención, días especiales, tipos de cita y Google Calendar u Outlook con Meet o Teams.",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "requiere": [],
       "secciones": [
         "Agenda",
         "Agenda, en Ajustes"
       ],
       "cambios": [
+        {
+          "version": "0.3.2",
+          "fecha": "2026-11-24",
+          "notas": [
+            "En la ficha del contacto, el texto del botón «+» ya no se corta."
+          ]
+        },
         {
           "version": "0.3.1",
           "fecha": "2026-11-23",
