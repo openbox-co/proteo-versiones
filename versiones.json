@@ -2,6 +2,130 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.15.0",
+      "fecha": "2026-11-24T04:08:16Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:ebb02145d914bb1cbdd4d6d95ed92e74c6febe947a0d7b8d37f6e3f251ddd74e",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Leads calientes con vendedor asignado mientras PROTEO conversa y dueño único; indicaciones del supervisor; nota de llamada y calendario por horas; empresas con color; cuentas para copiar; módulos Clientes y Reportes.",
+      "modulos": {
+        "agenda": {
+          "version": "0.3.1",
+          "notas": [
+            "El horario del negocio dice cuándo avisar de un lead caliente sin atender."
+          ]
+        },
+        "campanas": {
+          "version": "1.1.1",
+          "notas": [
+            "Las conversiones de cada cuenta se configuran en un diálogo; la página muestra si están activas."
+          ]
+        },
+        "catalogo": {
+          "version": "1.0.1",
+          "notas": [
+            "La base de la tienda se conecta o cambia en un diálogo; la página solo muestra si está conectada."
+          ]
+        },
+        "chat_web": {
+          "version": "1.2.1",
+          "notas": [
+            "Una conversación que es un lead caliente no se cierra sola cuando el visitante se va.",
+            "Al pasarla a una persona va directo a su vendedor.",
+            "El chat muestra las cuentas para pagar con «Copiar número»."
+          ]
+        },
+        "clientes": {
+          "version": "0.1.0",
+          "notas": [
+            "Qué compró cada cliente, categorías por reglas, filtros y exportar.",
+            "Al ganar una venta en el embudo se anota qué se vendió."
+          ]
+        },
+        "conocimiento": {
+          "version": "1.1.0",
+          "notas": [
+            "Cuentas para pagar: PROTEO las muestra tal cual, con botón de copiar; nunca escribe números."
+          ]
+        },
+        "conversaciones": {
+          "version": "1.4.0",
+          "notas": [
+            "Con los leads calientes activos, una conversación es de un solo vendedor: otro no la toma, contesta ni mueve; solo quien supervisa la reasigna.",
+            "El hilo y la bandeja dicen de quién es el lead caliente y por qué lo es; «Mías» los incluye.",
+            "Indicaciones del supervisor a PROTEO, para todas las conversaciones o para una.",
+            "«Enviar las cuentas para pagar», con el número listo para copiar."
+          ]
+        },
+        "embudo": {
+          "version": "1.2.0",
+          "notas": [
+            "Leads calientes: criterios con puntos en Ajustes → Tableros, una columna del embudo y un vendedor asignado por reparto parejo mientras PROTEO sigue conversando.",
+            "Aviso al vendedor y, si no entra a tiempo en horario, a quien supervisa.",
+            "Se descarta un lead caliente con su motivo.",
+            "Empresas con color por tablero, en conversaciones, embudo, tareas y leads.",
+            "Al ganar una venta se puede anotar lo que se vendió."
+          ]
+        },
+        "flujos": {
+          "version": "0.5.1",
+          "notas": [
+            "El lienzo ya no parpadea al mover los nodos: la posición se guarda al soltar."
+          ]
+        },
+        "formularios": {
+          "version": "1.0.0",
+          "notas": [
+            "Constructor, iframe, API con clave pública o firma y webhook de entrada con mapeo.",
+            "Primera versión como módulo: sin él, sus páginas y su API responden 404."
+          ]
+        },
+        "meta": {
+          "version": "1.1.1",
+          "notas": [
+            "Una conversación que es un lead caliente no se cierra al pasar las 24 h.",
+            "Las cuentas para pagar salen con cada número en su propio mensaje."
+          ]
+        },
+        "modo_guia": {
+          "version": "1.0.0",
+          "notas": [
+            "Mapa del sitio, recorridos con el personaje y navegación en webs Astro.",
+            "Primera versión como módulo."
+          ]
+        },
+        "notas_voz": {
+          "version": "1.1.0",
+          "notas": [
+            "Las notas de voz que llegan mientras atiende una persona también se pasan a texto, para leerlas en el panel."
+          ]
+        },
+        "reportes": {
+          "version": "0.1.0",
+          "notas": [
+            "Reporte de un día o de un rango, por vendedor, canal y tablero, en PDF o CSV.",
+            "Copia de cada día cerrado y aviso opcional cada mañana.",
+            "Solo para administrador, propietario y técnico."
+          ]
+        },
+        "tareas": {
+          "version": "1.4.0",
+          "notas": [
+            "Nota de cada llamada (qué se habló, acuerdos y próximo paso, que crea la tarea siguiente); se puede exigir.",
+            "Vistas de día y semana por horas, con las hechas tachadas.",
+            "Quien solo ve algunos tableros no ve tareas ajenas de otros."
+          ]
+        },
+        "webhook_salida": {
+          "version": "1.0.0",
+          "notas": [
+            "Cada lead calificado (y cerrado) sale firmado, con reintentos.",
+            "Primera versión como módulo."
+          ]
+        }
+      }
+    },
+    {
       "version": "v1.14.0",
       "fecha": "2026-11-23T00:02:39Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:11db4486db838cc383345bb0873634e60a2468433133b4085006caf075359b4e",
