@@ -5,7 +5,7 @@
       "id": "conversaciones",
       "nombre": "Conversaciones",
       "descripcion": "Bandeja para atender a las personas: notas internas, respuestas rápidas y avisos en vivo.",
-      "version": "1.4.1",
+      "version": "1.5.0",
       "requiere": [],
       "secciones": [
         "Conversaciones",
@@ -13,6 +13,15 @@
         "Etiquetas"
       ],
       "cambios": [
+        {
+          "version": "1.5.0",
+          "fecha": "2026-11-25",
+          "notas": [
+            "Quien tiene «Ver todo» (técnico, propietario, administrador, supervisor) ve todas las conversaciones en vivo, también las que atiende PROTEO y las de otras personas; un agente solo ve las que tiene asignadas.",
+            "Los filtros de la lista pasan de botones a un selector de estado (con «Las atiende PROTEO») y se suma un selector por canal (Web, WhatsApp, Instagram, Messenger: solo los habilitados). Se combinan.",
+            "Avisos más llamativos cuando una conversación espera a una persona o PROTEO te pasa un lead: timbre más fuerte, aviso con led que parpadea, título de la pestaña marcado y notificación del sistema que no se va sola. Respetan el sonido, las notificaciones y el movimiento reducido de cada persona."
+          ]
+        },
         {
           "version": "1.4.1",
           "fecha": "2026-11-24",

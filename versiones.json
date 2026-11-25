@@ -2,6 +2,127 @@
   "canal": "estable",
   "versiones": [
     {
+      "version": "v1.16.0",
+      "fecha": "2026-11-25T22:05:29Z",
+      "imagen": "ghcr.io/openbox-co/proteo@sha256:0f81bb99182ad2cd06acfdafff5233cb5a66ff5049aec0df17a3ef27323aa4a4",
+      "vuelta_atras": true,
+      "seguridad": false,
+      "notas": "Quien ve todo ve en vivo todas las conversaciones, también las que atiende PROTEO; un agente solo las suyas. Filtros por estado y por canal. Avisos más llamativos cuando una conversación espera a una persona.",
+      "modulos": {
+        "agenda": {
+          "version": "0.3.2",
+          "notas": [
+            "En la ficha del contacto, el texto del botón «+» ya no se corta."
+          ]
+        },
+        "campanas": {
+          "version": "1.1.1",
+          "notas": [
+            "Las conversiones de cada cuenta se configuran en un diálogo; la página muestra si están activas."
+          ]
+        },
+        "catalogo": {
+          "version": "1.0.1",
+          "notas": [
+            "La base de la tienda se conecta o cambia en un diálogo; la página solo muestra si está conectada."
+          ]
+        },
+        "chat_web": {
+          "version": "1.2.1",
+          "notas": [
+            "Una conversación que es un lead caliente no se cierra sola cuando el visitante se va.",
+            "Al pasarla a una persona va directo a su vendedor.",
+            "El chat muestra las cuentas para pagar con «Copiar número»."
+          ]
+        },
+        "clientes": {
+          "version": "0.1.0",
+          "notas": [
+            "Qué compró cada cliente, categorías por reglas, filtros y exportar.",
+            "Al ganar una venta en el embudo se anota qué se vendió."
+          ]
+        },
+        "conocimiento": {
+          "version": "1.1.0",
+          "notas": [
+            "Cuentas para pagar: PROTEO las muestra tal cual, con botón de copiar; nunca escribe números."
+          ]
+        },
+        "conversaciones": {
+          "version": "1.5.0",
+          "notas": [
+            "Quien tiene «Ver todo» (técnico, propietario, administrador, supervisor) ve todas las conversaciones en vivo, también las que atiende PROTEO y las de otras personas; un agente solo ve las que tiene asignadas.",
+            "Los filtros de la lista pasan de botones a un selector de estado (con «Las atiende PROTEO») y se suma un selector por canal (Web, WhatsApp, Instagram, Messenger: solo los habilitados). Se combinan.",
+            "Avisos más llamativos cuando una conversación espera a una persona o PROTEO te pasa un lead: timbre más fuerte, aviso con led que parpadea, título de la pestaña marcado y notificación del sistema que no se va sola. Respetan el sonido, las notificaciones y el movimiento reducido de cada persona."
+          ]
+        },
+        "embudo": {
+          "version": "1.2.0",
+          "notas": [
+            "Leads calientes: criterios con puntos en Ajustes → Tableros, una columna del embudo y un vendedor asignado por reparto parejo mientras PROTEO sigue conversando.",
+            "Aviso al vendedor y, si no entra a tiempo en horario, a quien supervisa.",
+            "Se descarta un lead caliente con su motivo.",
+            "Empresas con color por tablero, en conversaciones, embudo, tareas y leads.",
+            "Al ganar una venta se puede anotar lo que se vendió."
+          ]
+        },
+        "flujos": {
+          "version": "0.5.1",
+          "notas": [
+            "El lienzo ya no parpadea al mover los nodos: la posición se guarda al soltar."
+          ]
+        },
+        "formularios": {
+          "version": "1.0.0",
+          "notas": [
+            "Constructor, iframe, API con clave pública o firma y webhook de entrada con mapeo.",
+            "Primera versión como módulo: sin él, sus páginas y su API responden 404."
+          ]
+        },
+        "meta": {
+          "version": "1.1.1",
+          "notas": [
+            "Una conversación que es un lead caliente no se cierra al pasar las 24 h.",
+            "Las cuentas para pagar salen con cada número en su propio mensaje."
+          ]
+        },
+        "modo_guia": {
+          "version": "1.0.0",
+          "notas": [
+            "Mapa del sitio, recorridos con el personaje y navegación en webs Astro.",
+            "Primera versión como módulo."
+          ]
+        },
+        "notas_voz": {
+          "version": "1.1.0",
+          "notas": [
+            "Las notas de voz que llegan mientras atiende una persona también se pasan a texto, para leerlas en el panel."
+          ]
+        },
+        "reportes": {
+          "version": "0.1.0",
+          "notas": [
+            "Reporte de un día o de un rango, por vendedor, canal y tablero, en PDF o CSV.",
+            "Copia de cada día cerrado y aviso opcional cada mañana.",
+            "Solo para administrador, propietario y técnico."
+          ]
+        },
+        "tareas": {
+          "version": "1.4.1",
+          "notas": [
+            "En la ficha del contacto, el texto del botón «+» ya no se corta."
+          ]
+        },
+        "webhook_salida": {
+          "version": "1.0.0",
+          "notas": [
+            "Cada lead calificado (y cerrado) sale firmado, con reintentos.",
+            "Primera versión como módulo."
+          ]
+        }
+      }
+    },
+    {
       "version": "v1.15.1",
       "fecha": "2026-11-24T19:52:31Z",
       "imagen": "ghcr.io/openbox-co/proteo@sha256:05250571074db93589287606edd332dbc2dc46fc4a45bba4a9f217f7ad7862a0",
