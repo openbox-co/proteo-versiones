@@ -706,7 +706,7 @@
       "id": "reportes",
       "nombre": "Reportes",
       "descripcion": "El reporte de cada día o de un rango de fechas: ventas, leads calientes, vendedores, tareas y llamadas, en PDF o CSV.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "requiere": [
         "embudo"
       ],
@@ -714,6 +714,15 @@
         "Reportes"
       ],
       "cambios": [
+        {
+          "version": "0.2.0",
+          "fecha": "2026-11-27",
+          "notas": [
+            "Atención del equipo: tiempos de respuesta, de espera y de cierre, y quién está esperando ahora.",
+            "Cifras por agente, las mayores demoras, resultados y efectividad.",
+            "Gráficas nuevas en Inicio (sección «Rendimiento») y en Reportes, también en el CSV."
+          ]
+        },
         {
           "version": "0.1.0",
           "fecha": "2026-11-23",
